@@ -4,36 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div id="container">
       <h1>Tip Calculator</h1>
       <div id="main">
         <div>
-          <label for="bill">Bill Amount</label><br>
-          <input id="bill" type="text" placeholder="Enter bill amount"/>
+          <label for="bill">Bill Amount</label><br />
+          <input
+            id="bill"
+            oninput="handleChangeInput(event)"
+            type="text"
+            placeholder="Enter bill amount"
+          />
         </div>
         <div>
-          <label>How was the service ?</label><br>
-          <select onchange="" name="quality" id="quality">
-            <option value="">Select</option>
+          <label>How was the service ?</label><br />
+          <select onchange="calculate()" name="quality" id="quality">
             <option value="20">20%-top notch</option>
             <option value="15">15%- Excellent</option>
             <option value="10">10% - Good</option>
             <option value="5">5% - Bad</option>
-            <option value="0">0% - wrost</option>
+            <option selected value="0">0% - wrost</option>
           </select>
         </div>
         <div>
-          <label for="people">Total number of people</label><br>
-          <input id="people" type="text" value="1" placeholder="People to split the bill"/>
+          <label for="people">Total number of people</label><br />
+          <input
+            id="people"
+            type="text"
+            value="1"
+            placeholder="People to split the bill"
+            oninput="handleChangeInput(event)"
+          />
         </div>
         <div>
           <h3>Tip Amount</h3>
-          <p>₹</p>
+          <p>₹<span id="tip-amount">0</span></p>
         </div>
       </div>
     </div>
   </body>
+  <script src="./script.js"></script>
 </html>

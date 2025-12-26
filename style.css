@@ -47,6 +47,7 @@ input[type="text"] {
   width: 200px;
   margin: 0 0 20px 0;
   font-size: 14px;
+  cursor: pointer;
 }
 input[type="text"]:focus {
   outline: none;
@@ -59,4 +60,8 @@ select {
   font-size: 14px;
   margin: 0 0 20px 0;
   padding: 5px;
+  cursor: pointer;
+}
+select option:hover{
+  cursor: pointer;
 }
