@@ -4,18 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div>
+    <div id="container">
       <h1>Tip Calculator</h1>
-      <div>
+      <div id="main">
         <div>
-          <label for="bill">Bill Amount</label>
-          <input id="bill" type="number" min="0"/>
+          <label for="bill">Bill Amount</label><br>
+          <input id="bill" type="text" placeholder="Enter bill amount"/>
         </div>
         <div>
-          <p>How was the service ?</p>
+          <label>How was the service ?</label><br>
           <select onchange="" name="quality" id="quality">
+            <option value="">Select</option>
             <option value="20">20%-top notch</option>
             <option value="15">15%- Excellent</option>
             <option value="10">10% - Good</option>
@@ -24,8 +26,8 @@
           </select>
         </div>
         <div>
-          <label for="people">Total number of people</label>
-          <input id="people" type="number" min="1" value="1"/>
+          <label for="people">Total number of people</label><br>
+          <input id="people" type="text" value="1" placeholder="People to split the bill"/>
         </div>
         <div>
           <h3>Tip Amount</h3>
