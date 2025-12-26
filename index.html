@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div>
+      <h1>Tip Calculator</h1>
+      <div>
+        <div>
+          <label for="bill">Bill Amount</label>
+          <input id="bill" type="number" min="0"/>
+        </div>
+        <div>
+          <p>How was the service ?</p>
+          <select onchange="" name="quality" id="quality">
+            <option value="20">20%-top notch</option>
+            <option value="15">15%- Excellent</option>
+            <option value="10">10% - Good</option>
+            <option value="5">5% - Bad</option>
+            <option value="0">0% - wrost</option>
+          </select>
+        </div>
+        <div>
+          <label for="people">Total number of people</label>
+          <input id="people" type="number" min="1" value="1"/>
+        </div>
+        <div>
+          <h3>Tip Amount</h3>
+          <p>₹</p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
